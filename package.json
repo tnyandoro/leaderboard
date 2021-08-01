@@ -1,0 +1,36 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "IMPORTANT NOTE This is the first time you will use Gitflow. Keep that in mind! Create an npm project with webpack. (If you need a refresher, check the previous project or webpack exercise). Write plain HTML markup with minimum styling (just to make the layout), because you will implement styles in the following steps. Use this wireframe as a guide:.Don't make API calls (you'll do it in a following lesson). Use ES6 modules, with import and export.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnyandoro/leaderboard.git"
+  },
+  "author": "Tendai Nyandoro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tnyandoro/leaderboard/issues"
+  },
+  "homepage": "https://github.com/tnyandoro/leaderboard#readme",
+  "devDependencies": {
+    "hint": "^6.1.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.20.1",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "babel-loader": "^8.2.2"
+  }
+}

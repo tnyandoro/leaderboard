@@ -1,0 +1,2 @@
+# leaderboard
+IMPORTANT NOTE This is the first time you will use Gitflow. Keep that in mind! Create an npm project with webpack. (If you need a refresher, check the previous project or webpack exercise). Write plain HTML markup with minimum styling (just to make the layout), because you will implement styles in the following steps. Use this wireframe as a guide:.Don't make API calls (you'll do it in a following lesson). Use ES6 modules, with import and export.
