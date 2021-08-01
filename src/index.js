@@ -1,3 +1,4 @@
+import html from "./file.html";
 import getClasses from './getClasses';
 
 console.log('ran from index.js');
