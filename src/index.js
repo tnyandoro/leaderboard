@@ -1,4 +1,4 @@
-import html from './index.html';
+// import html from './index.html';
 import './style.css';
 
 window.addEventListener('load', () => {
