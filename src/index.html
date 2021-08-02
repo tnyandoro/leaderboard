@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,54 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="container">
     <header>
       <h1>Leaderboard</h1>
     </header>
     <main>
-      <section class="scores-section">
-        <header class="scores-header mb-20">
-          <h2>Recent scores</h2>
-          <button id="refresh-button" class="primary-button" type="button">
-            Refresh
-          </button>
-        </header>
-        <ul class="scores-list" id="scores"></ul>
-      </section>
-      <section class="add-score-section">
-        <h2 class="mb-20">Add your score</h2>
-        <form id="add-score" class="add-score-form">
-          <input class="score-input" placeholder="Your name" required type="text" />
-          <input class="score-input" placeholder="Your score" required type="number" min="0" />
-          <button class="primary-button action-button" type="submit">
-            Submit
-          </button>
-        </form>
-      </section>
+      <div class="row">
+        <section class="scores-section column">
+          <header class="scores-header mb-20">
+            <h2>Recent scores</h2>
+            <button id="refresh-button" class="primary-button" type="button">
+              Refresh
+            </button>
+          </header>
+          <ul class="scores-list" id="scores"></ul>
+          <table>
+            <table style="width:100%">
+              <tr>
+                <td>Jill</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>80</td>
+              </tr>
+            </table>
+        </section>
+        <section class="add-score-section column">
+          <h2 class="mb-20">Add your score</h2>
+          <form id="add-score" class="add-score-form">
+            <input class="score-input" placeholder="Your name" required type="text" />
+            <input class="score-input" placeholder="Your score" required type="number" min="0" />
+            <button class="primary-button action-button" type="submit">
+              Submit
+            </button>
+          </form>
+        </section>
+      </div>
     </main>
   </div>
 </body>
+
 </html>
