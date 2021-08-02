@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaderboard</title>
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -18,9 +19,8 @@
     <header>
       <h1>Leaderboard</h1>
     </header>
-    <main>
-      <div class="row">
-        <section class="scores-section column">
+    <main class ="page">
+        <div class="scores-section column">
           <header class="scores-header mb-20">
             <h2>Recent scores</h2>
             <button id="refresh-button" class="primary-button" type="button">
@@ -28,8 +28,7 @@
             </button>
           </header>
           <ul class="scores-list" id="scores"></ul>
-          <table>
-            <table style="width:100%">
+            <table class="table table-striped">
               <tr>
                 <td>Jill</td>
                 <td>50</td>
@@ -43,18 +42,19 @@
                 <td>80</td>
               </tr>
             </table>
-        </section>
-        <section class="add-score-section column">
+          </div>
+        <div class="add-score-section column">
           <h2 class="mb-20">Add your score</h2>
           <form id="add-score" class="add-score-form">
-            <input class="score-input" placeholder="Your name" required type="text" />
-            <input class="score-input" placeholder="Your score" required type="number" min="0" />
+            <input class="score-input" placeholder="Your name" required type="text" /><br>
+           <br>
+            <input class="score-input" placeholder="Your score" required type="number" min="0" /><br>
+            <br>
             <button class="primary-button action-button" type="submit">
               Submit
             </button>
           </form>
-        </section>
-      </div>
+        </div>
     </main>
   </div>
 </body>
