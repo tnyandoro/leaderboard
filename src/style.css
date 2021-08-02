@@ -31,3 +31,8 @@ li:nth-child(odd) {
 li:nth-child(even) {
   background-color: #fff;
 }
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
