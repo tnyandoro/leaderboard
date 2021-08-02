@@ -2,7 +2,6 @@ const path = require('path');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 const options = {};
 
 module.exports = {
@@ -32,6 +31,10 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: 'html-loader',
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },

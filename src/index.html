@@ -19,42 +19,29 @@
     <header>
       <h1>Leaderboard</h1>
     </header>
-    <main class ="page">
+    <main class ="flex-container">
         <div class="scores-section column">
           <header class="scores-header mb-20">
             <h2>Recent scores</h2>
-            <button id="refresh-button" class="primary-button" type="button">
+            <button id="refresh-button" class="btn btn-info primary-button" type="button">
               Refresh
             </button>
           </header>
-          <ul class="scores-list" id="scores"></ul>
-            <table class="table table-striped border">
-              <tr>
-                <td>Jill</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>Eve</td>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>John</td>
-                <td>80</td>
-              </tr>
-            </table>
+          <ul class="score-list" id="score"></ul>
           </div>
         <div class="add-score-section column">
           <h2 class="mb-20">Add your score</h2>
           <form id="add-score" class="add-score-form">
             <input class="score-input" placeholder="Your name" required type="text" /><br>
-           <br>
+            <br>
             <input class="score-input" placeholder="Your score" required type="number" min="0" /><br>
             <br>
-            <button class="primary-button action-button" type="submit">
+            <button class="btn btn-primary submit-button action-button" type="submit">
               Submit
             </button>
           </form>
         </div>
+        <div id="container"></div>
     </main>
   </div>
 </body>

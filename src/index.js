@@ -1,9 +1,11 @@
 import html from './index.html';
-import getClasses from './getClasses';
+import './style.css';
 
-console.log('ran from index.js');
-getClasses();
-
-const obj = { a: 'alpha', b: 'bravo' };
-const newObj = { ...obj, c: 'charlie' };
-console.log(newObj);
+window.addEventListener('load', () => {
+  const ol = document.querySelector('#score');
+  new Array(6).fill(1).forEach((_, index) => {
+    const li = document.createElement('li');
+    li.innerText = `Name: ${index}`;
+    ol.appendChild(li);
+  });
+});

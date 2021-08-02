@@ -1,9 +1,8 @@
-.page {
+.flex-container {
   display: flex;
-  flex-wrap: nowrap;
 }
 
-.page > div {
+.flex-container > div {
   background-color: #f1f1f1;
   width: 100%;
   margin: 10px;
@@ -15,4 +14,20 @@
   text-align: center;
   margin: 10px;
   justify-content: space-around;
+}
+
+.submit-button {
+  float: right;
+}
+
+li {
+  color: black;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(180, 180, 180);
+}
+
+li:nth-child(even) {
+  background-color: #fff;
 }
