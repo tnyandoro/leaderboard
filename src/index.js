@@ -1,7 +1,8 @@
 // import html from './index.html';
 import './style.css';
+import * as ApiData from './apiData.js';
 
-const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/ApiData/';
 
 const GAME = 'tower';
 
@@ -19,12 +20,12 @@ const displayScore = (score = []) => {
 };
 
 window.addEventListener('load', async () => {
-  const id = await API.createGame(GAME);
+  const id = await ApiData.createGame(GAME);
   const refreshBtn = document.getElementById('refresh-btn');
   const form = document.getElementById('add-a-score');
 
   const refreshScores = async () => {
-    const scores = await API.fetchScores(id, refreshBtn);
+    const scores = await ApiData.fetchScores(id, refreshBtn);
     displayScores(scores);
   };
 
@@ -40,7 +41,7 @@ window.addEventListener('load', async () => {
       score: scoreInput.value,
     };
 
-    await API.submitScore(id, data);
+    await ApiData.submitScore(id, data);
     await refreshScores();
 
     form.reset();
