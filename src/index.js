@@ -9,7 +9,10 @@ const displayScore = (score = []) => {
   const ol = document.getElementById('score');
   ol.innerHTML = '';
 
-  score.forEach(({ user, score }) => {
+  score.forEach(({
+    user,
+    score,
+  }) => {
     const li = document.createElement('li');
     li.innerText = `${score[user]}`;
   });
@@ -27,11 +30,19 @@ window.addEventListener('load', async () => {
 
   refreshBtn.addEventListener('click', refreshScores);
 
-  const ol = document.querySelector('#score');
-  new Array(6).fill(1).forEach((_, index) => {
-    const li = document.createElement('li');
-    li.innerText = `Name: ${index}`;
-    ol.appendChild(li);
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const nameInput = form.el[0];
+    const scoreInput = form.el[1];
+
+    const data = {
+      user: nameInput.value,
+      score: scoreInput.value,
+    };
+
+    await API.submitScore(id, data);
+    await refreshScores();
+
+    form.reset();
   });
 });
-
