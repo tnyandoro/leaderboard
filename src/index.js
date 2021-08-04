@@ -2,13 +2,11 @@
 import './style.css';
 import * as ApiData from './apiData.js';
 
-const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/ApiData/';
-
 const GAME = 'tower';
 
 const displayScore = (score = []) => {
-  const ol = document.getElementById('score');
-  ol.innerHTML = '';
+  const ul = document.getElementById('score');
+  ul.innerHTML = '';
 
   score.forEach(({
     user,
@@ -26,7 +24,7 @@ window.addEventListener('load', async () => {
 
   const refreshScores = async () => {
     const scores = await ApiData.fetchScores(id, refreshBtn);
-    displayScores(scores);
+    displayScore(scores);
   };
 
   refreshBtn.addEventListener('click', refreshScores);
