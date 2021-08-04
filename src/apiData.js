@@ -1,4 +1,5 @@
-import { import } from 'components'
+import { parseId, post, get } from './components.js';
+
 class ApiData {
   constructor(http) {
     this.http = http;
