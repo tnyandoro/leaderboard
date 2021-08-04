@@ -15,7 +15,18 @@ const displayScore = (score = []) => {
   });
 };
 
-window.addEventListener('load', () => {
+window.addEventListener('load', async () => {
+  const id = await API.createGame(GAME);
+  const refreshBtn = document.getElementById('refresh-btn');
+  const form = document.getElementById('add-a-score');
+
+  const refreshScores = async () => {
+    const scores = await API.fetchScores(id, refreshBtn);
+    displayScores(scores);
+  };
+
+  refreshBtn.addEventListener('click', refreshScores);
+
   const ol = document.querySelector('#score');
   new Array(6).fill(1).forEach((_, index) => {
     const li = document.createElement('li');
