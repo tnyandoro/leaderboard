@@ -1,33 +1,20 @@
-import { parseId, post, get } from './components.js';
+const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+// eslint-disable-next-line no-unused-vars
+const GAME_NAME = 'TendaiGame';
+const GAME_ID = 'q8ry2kihulqdgF3R45SQ';
 
-class ApiData {
-  constructor(http) {
-    this.http = http;
-  }
+export const addScore = async (user, score) => {
+  const response = await fetch(`${API_URL}/${GAME_ID}/scores`, {
+    method: 'POST',
+    body: JSON.stringify({
+      user,
+      score,
+    }),
+  });
+  return response.json();
+};
 
-  createGame = async (name) => {
-    const {
-      result,
-    } = await post('games', {
-      name,
-    });
-    const id = parseId(result);
-    return id;
-  };
-
-  fetchScores = async (id) => {
-    const {
-      result,
-    } = await get(`games/${id}/scores/`);
-    return result;
-  };
-
-  submitScore = async (id, data) => {
-    const {
-      result,
-    } = await post(`games/${id}/scores/`, data);
-    return result;
-  };
-}
-
-export default ApiData;
+export const getScores = async () => {
+  const response = await fetch(`${API_URL}/${GAME_ID}/scores`);
+  return response.json();
+};

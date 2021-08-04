@@ -1,47 +1,41 @@
 // import html from './index.html';
 import './style.css';
-import * as ApiData from './apiData.js';
+import * as API from './apiData.js';
 
-const GAME = 'tower';
-
-const displayScore = (score = []) => {
+const refreshScores = async () => {
+  const scores = await API.getScores();
   const ul = document.getElementById('score');
+
   ul.innerHTML = '';
 
-  score.forEach(({
-    user,
-    score,
-  }) => {
+  scores.forEach((score) => {
     const li = document.createElement('li');
-    li.innerText = `${score[user]}`;
+    li.innerText = `${score.user}: ${score.score}`;
+    ul.appendChild(li);
   });
 };
 
 window.addEventListener('load', async () => {
-  const id = await ApiData.createGame(GAME);
   const refreshBtn = document.getElementById('refresh-btn');
   const form = document.getElementById('add-a-score');
+  const nameInput = document.getElementById('name-input');
+  const scoreInput = document.getElementById('score-input');
 
-  const refreshScores = async () => {
-    const scores = await ApiData.fetchScores(id, refreshBtn);
-    displayScore(scores);
-  };
-
-  refreshBtn.addEventListener('click', refreshScores);
+  refreshBtn.addEventListener('click', async () => {
+    refreshScores();
+  });
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    const nameInput = form.el[0];
-    const scoreInput = form.el[1];
 
-    const data = {
-      user: nameInput.value,
-      score: scoreInput.value,
-    };
+    const user = nameInput.value;
+    const score = Number(scoreInput.value);
 
-    await ApiData.submitScore(id, data);
+    await API.addScore(user, score);
     await refreshScores();
 
     form.reset();
   });
+
+  await refreshScores();
 });
