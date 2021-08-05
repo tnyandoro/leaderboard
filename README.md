@@ -56,10 +56,7 @@ in your browser go to http://localhost:3000
 npm run build
 ```
 
-### Run tests
 
-```bash
-npm test
 ```
 
 ## Authors
