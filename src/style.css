@@ -29,7 +29,7 @@ li {
 }
 
 li:nth-child(odd) {
-  background-color: rgb(253, 241, 136);
+  background-color: rgb(254, 241, 136);
 }
 
 li:nth-child(even) {

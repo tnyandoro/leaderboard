@@ -2,19 +2,20 @@
 
 > The leaderboard website displays scores submitted by different players.
 
-![screenshot](./app_screenshot.png)
+![Screenshot](https://user-images.githubusercontent.com/30318155/128324473-e47417a6-1db9-457d-a3f2-0112baaa88aa.png)
 
-The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service]().
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
 ## Built With
 
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 
 ## Live Demo
 
-[Live Demo Link](/)
+[Live Demo Link](https://tnyandoro.github.io/leaderboard/?)
 
 ## Getting Started
 
@@ -55,10 +56,7 @@ in your browser go to http://localhost:3000
 npm run build
 ```
 
-### Run tests
 
-```bash
-npm test
 ```
 
 ## Authors
@@ -74,7 +72,7 @@ npm test
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](/issues/).
+Feel free to check the [issues page](https://github.com/tnyandoro/leaderboard/issues)/).
 
 ## Show your support
 
@@ -82,8 +80,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
+- [Microverse](https://www.microverse.org/)
 - [Leaderboard API Service]()
+- [Bootswatch](https://bootswatch.com/)
 
 ## 📝 License
 

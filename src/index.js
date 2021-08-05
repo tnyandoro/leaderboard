@@ -1,7 +1,9 @@
-// import html from './index.html';
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-extraneous-dependencies */
 import './style.css';
 import './bootstrap.css';
 import * as API from './apiData.js';
+import 'regenerator-runtime/runtime';
 
 const refreshScores = async () => {
   const scores = await API.getScores();

@@ -1,3 +1,7 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-extraneous-dependencies */
+import 'regenerator-runtime/runtime';
+
 const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 // eslint-disable-next-line no-unused-vars
 const GAME_NAME = 'TendaiGame';
