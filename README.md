@@ -40,7 +40,13 @@ npm install
 ### Usage
 
 ```bash
-npm start
+npm run start
+Project is running at http://localhost:8080/
+or 
+npm run server
+
+in your browser go to http://localhost:3000
+
 ```
 
 ### Build
