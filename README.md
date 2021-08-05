@@ -15,7 +15,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/tnyandoro/leaderboard/feature/final-touches/dist/index.html)
+[Live Demo Link](https://tnyandoro.github.io/leaderboard/?)
 
 ## Getting Started
 
