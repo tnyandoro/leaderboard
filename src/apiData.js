@@ -1,4 +1,4 @@
-const API_URL = 'http://us-central1-js-capstone-backend.cloudfunctions.net/api';
+const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 // eslint-disable-next-line no-unused-vars
 const GAME_NAME = 'TendaiGame';
 const GAME_ID = 'q8ry2kihulqdgF3R45SQ';

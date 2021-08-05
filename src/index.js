@@ -1,4 +1,3 @@
-// import html from './index.html';
 import './style.css';
 import './bootstrap.css';
 import * as API from './apiData.js';

@@ -4,11 +4,9 @@
     ],
     "plugins": [
         [
-            "@babel/plugin-transform-regenerator",
+            "transform-runtime",
             {
-                "asyncGenerators": true,
-                "generators": true,
-                "async": true
+                "regenerator": true
             }
         ]
     ]
