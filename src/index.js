@@ -2,8 +2,6 @@
 import './style.css';
 import './bootstrap.css';
 import * as API from './apiData.js';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import 'regenerator-runtime/runtime';
 
 const refreshScores = async () => {
   const scores = await API.getScores();

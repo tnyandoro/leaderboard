@@ -6,9 +6,9 @@
         [
             "@babel/plugin-transform-regenerator",
             {
-                "asyncGenerators": false,
-                "generators": false,
-                "async": false
+                "asyncGenerators": true,
+                "generators": true,
+                "async": true
             }
         ]
     ]
