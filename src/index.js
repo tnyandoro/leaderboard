@@ -1,5 +1,6 @@
 // import html from './index.html';
 import './style.css';
+import './bootstrap.css';
 import * as API from './apiData.js';
 
 const refreshScores = async () => {
@@ -8,7 +9,7 @@ const refreshScores = async () => {
 
   ul.innerHTML = '';
 
-  scores.forEach((score) => {
+  scores.result.forEach((score) => {
     const li = document.createElement('li');
     li.innerText = `${score.user}: ${score.score}`;
     ul.appendChild(li);

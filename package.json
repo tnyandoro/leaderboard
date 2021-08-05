@@ -4,9 +4,10 @@
   "description": "IMPORTANT NOTE This is the first time you will use Gitflow. Keep that in mind! Create an npm project with webpack. (If you need a refresher, check the previous project or webpack exercise). Write plain HTML markup with minimum styling (just to make the layout), because you will implement styles in the following steps. Use this wireframe as a guide:.Don't make API calls (you'll do it in a following lesson). Use ES6 modules, with import and export.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch"
+    "build": "webpack --watch",
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/tnyandoro/leaderboard#readme",
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
@@ -32,7 +34,7 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.20.1",
-    "webpack": "^5.47.1",
+    "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-manifest-plugin": "^4.0.2",
@@ -41,6 +43,7 @@
   "dependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.9",
+    "@babel/runtime": "^7.14.8",
     "babel-loader": "^8.2.2"
   }
 }
