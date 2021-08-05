@@ -11,6 +11,7 @@ The leaderboard website displays scores submitted by different players. It also 
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 
 ## Live Demo
 
@@ -82,8 +83,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
+- [Microverse](https://www.microverse.org/)
 - [Leaderboard API Service]()
+- [Bootswatch](https://bootswatch.com/)
 
 ## 📝 License
 

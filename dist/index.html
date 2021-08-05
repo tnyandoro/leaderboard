@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="57011448dc08b9372b5e.css">
+ <link rel="stylesheet" href="e3390040f06b018229ce.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<script defer src="main.js"></script></head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <main class="flex-container">
+      <div class="scores-section column">
+        <header class="score-header mb-20">
+          <h2>Recent scores</h2>
+          <button id="refresh-btn" class="btn btn-info" type="button">
+            Refresh
+          </button>
+        </header>
+        <ul class="score-list" id="score">
+        </ul>
+      </div>
+      <div class="add-score-section column">
+        <h2 class="mb-20">Add your score</h2>
+        <form id="add-a-score" class="add-a-score-form">
+          <input id="name-input" class="score-input" placeholder="Your name" required type="text" /><br>
+          <br>
+          <input id="score-input" class="score-input" placeholder="Your score" required type="number" min="0" /><br>
+          <br>
+          <button class="btn btn-primary submit-button action-button" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="dd4efb811a110747dea2.js"></script>
+</body>
+
+</html>

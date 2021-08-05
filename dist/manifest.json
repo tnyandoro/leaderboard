@@ -1,0 +1,5 @@
+{
+  "main.js": "automain.js",
+  "index.html": "autoindex.html",
+  "main.js.map": "automain.js.map"
+}
